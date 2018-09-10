@@ -5,7 +5,7 @@ public class floatData : ScriptableObject
 {
     public float value;
 
-    public virtual float Value
+    public virtual float Value //When this is called somewhere... get { return value; }
     {
         get { return value; } //We constantly want to get our horizontal or vertical
     }

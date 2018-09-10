@@ -140,31 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d634c3c43bb1a3d4db89817714c423fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 1908838775}
-  m_Lens:
-    FieldOfView: 50
-    OrthographicSize: 10
-    NearClipPlane: 0.1
-    FarClipPlane: 5000
-    Dutch: 0
-    LensShift: {x: 0, y: 0}
-  m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
-    m_OnCameraLive:
-      m_PersistentCalls:
-        m_Calls: []
-      m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  m_LegacyBlendHint: 0
-  m_ComponentOwner: {fileID: 313548395}
 --- !u!4 &45837109
 Transform:
   m_ObjectHideFlags: 0
@@ -221,14 +196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c0364e89b14954597560b9bb2b7ffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BindingMode: 1
-  m_FollowOffset: {x: 0.053297997, y: 1.04, z: -6.023116}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
-  m_PitchDamping: 0
-  m_YawDamping: 0
-  m_RollDamping: 0
 --- !u!114 &313548397
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -240,20 +207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0d7fbdb7805ad4196ab0070b6b7be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0
-  m_LookaheadSmoothing: 10
-  m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
-  m_BiasX: 0
-  m_BiasY: 0
 --- !u!114 &313548398
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -423,31 +376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a993e4ca23c70cf488708bc3b6fd7771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Cinemachine.CinemachineBrain+BrainEvent, Cinemachine, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1908838769
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,12 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e45c5950bab8d2144a1b32eda0af3893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 8
-  gravity: 20
-  MoveX: {fileID: 11400000, guid: 3b7946608b222bf4c9448609b8cde866, type: 2}
-  MoveY: {fileID: 11400000, guid: 96b8c490deab1f74a8839cd7df2b43b8, type: 2}
-  MoveZ: {fileID: 11400000, guid: dd297f9e3860bc549910c557fdf2768a, type: 2}
+  Pattern: {fileID: 11400000, guid: 037428532308e19429fd0719fd40b51a, type: 2}
 --- !u!143 &1908838771
 CharacterController:
   m_ObjectHideFlags: 0
