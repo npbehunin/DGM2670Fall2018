@@ -8,11 +8,14 @@
         <e p="Scripts" t="Include">
           <e p="CharacterMovement.cs" t="Include" />
           <e p="endGame.cs" t="Include" />
+          <e p="floatBool.cs" t="Include" />
           <e p="floatData.cs" t="Include" />
           <e p="FloatInput.cs" t="Include" />
           <e p="healthBar.cs" t="Include" />
           <e p="IfStatements.cs" t="Include" />
           <e p="MovePattern.cs" t="Include" />
+          <e p="MovePatternDual.cs" t="Include" />
+          <e p="MovePatternNotGrounded.cs" t="Include" />
           <e p="newEvent.cs" t="Include" />
           <e p="playerLives.cs" t="Include" />
           <e p="PowerUpConfig.cs" t="Include" />
