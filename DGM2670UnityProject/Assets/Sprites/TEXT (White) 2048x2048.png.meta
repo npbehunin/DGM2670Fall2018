@@ -1,0 +1,662 @@
+fileFormatVersion: 2
+guid: 5d7fb79619199614d844febe85423b10
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TEXT (White) 2048x2048_0
+    21300002: TEXT (White) 2048x2048_1
+    21300004: TEXT (White) 2048x2048_2
+    21300006: TEXT (White) 2048x2048_3
+    21300008: TEXT (White) 2048x2048_4
+    21300010: TEXT (White) 2048x2048_5
+    21300012: TEXT (White) 2048x2048_6
+    21300014: TEXT (White) 2048x2048_7
+    21300016: TEXT (White) 2048x2048_8
+    21300018: TEXT (White) 2048x2048_9
+    21300020: TEXT (White) 2048x2048_10
+    21300022: TEXT (White) 2048x2048_11
+    21300024: TEXT (White) 2048x2048_12
+    21300026: TEXT (White) 2048x2048_13
+    21300028: TEXT (White) 2048x2048_14
+    21300030: TEXT (White) 2048x2048_15
+    21300032: TEXT (White) 2048x2048_16
+    21300034: TEXT (White) 2048x2048_17
+    21300036: TEXT (White) 2048x2048_18
+    21300038: TEXT (White) 2048x2048_19
+    21300040: TEXT (White) 2048x2048_20
+    21300042: TEXT (White) 2048x2048_21
+    21300044: TEXT (White) 2048x2048_22
+    21300046: TEXT (White) 2048x2048_23
+    21300048: TEXT (White) 2048x2048_24
+    21300050: TEXT (White) 2048x2048_25
+    21300052: TEXT (White) 2048x2048_26
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 1651, z: 1694, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1672
+        width: 308
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09cd80c52442cf4b8e9df99af3734e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1670
+        width: 230
+        height: 371
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d8738feb91b294b9e476d110ebd10d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_2
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1668
+        width: 278
+        height: 376
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8632c3d20a3acd14ca80a62a3fc0e1ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_3
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1668
+        width: 300
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babcf7670abf40e4ab7de70f19559213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_4
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1673
+        width: 206
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018349b0c4797e7449a01788283d5a8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_5
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 1673
+        width: 197
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcecf65e2c9cf23439e26595ed3fdb57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1252
+        width: 300
+        height: 376
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c06ee90a674e5c439ded36d1548ae81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1257
+        width: 272
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f93c1f53d08ac4b8b5ded9c1c05359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_8
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 1257
+        width: 48
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972d2ac3cf3d1d340a1d1eaf38ea365d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_9
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1251
+        width: 161
+        height: 371
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9037d2473c8c0954692ae64b6addb830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_10
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 1257
+        width: 258
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771b0528b70f54c428cc803224bcab2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_11
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 1257
+        width: 204
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f388e98ce090a44686b551631d7bd63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 840
+        width: 373
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc2f9d87216eaa4cb134f81c2d186c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_13
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 840
+        width: 275
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07f857fba0afb045a77e42b5341d282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_14
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 833
+        width: 336
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6886f45165a35444b29f0d6edab7b28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_15
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 840
+        width: 225
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8328be674c8f0e74a95f8cea5cc219cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_16
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 786
+        width: 337
+        height: 425
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff8e662669537942877edb26910f278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_17
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 423
+        width: 238
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7edb8adaa89dcfb46802bcc491f84c33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 418
+        width: 224
+        height: 378
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97eb4d34e2acd0d4ab64784f0a0d9130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_19
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 423
+        width: 271
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836d39715cf5fb24aa39eb36285929e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_20
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 417
+        width: 270
+        height: 371
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab07e7710ef813e4bb1934324cdbb563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_21
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 423
+        width: 303
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635d8dff5085a4c4c9e0e718bbc75f93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_22
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 6
+        width: 447
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ab7235ea139af42bf0ecabc1d53232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 7
+        width: 284
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cacf72e51c7ce4dbbb27dea91fff37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_24
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 7
+        width: 287
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac71850a34854ee48a374801df4b6ffb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_25
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 7
+        width: 267
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf707093ae664dd4d8b530beafad87f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXT (White) 2048x2048_26
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 66
+        width: 450
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0544d59fcfd84794ea5b84087c9c77c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4e3189bd39a18d5448db99310758d182
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

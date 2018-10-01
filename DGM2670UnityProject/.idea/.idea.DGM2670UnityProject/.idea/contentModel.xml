@@ -11,6 +11,7 @@
         <e p="Scripts" t="Include">
           <e p="AIAgent.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
+          <e p="Draggable.cs" t="Include" />
           <e p="endGame.cs" t="Include" />
           <e p="floatBool.cs" t="Include" />
           <e p="floatData.cs" t="Include" />
@@ -23,11 +24,14 @@
           <e p="MovePattern.cs" t="Include" />
           <e p="MovePatternDual.cs" t="Include" />
           <e p="MovePatternNotGrounded.cs" t="Include" />
+          <e p="NameID.cs" t="Include" />
           <e p="newEvent.cs" t="Include" />
+          <e p="ObjectID.cs" t="Include" />
           <e p="playerLives.cs" t="Include" />
           <e p="PowerUpConfig.cs" t="Include" />
           <e p="RunCountdown.cs" t="Include" />
           <e p="scriptableTest.cs" t="Include" />
+          <e p="TriggerID.cs" t="Include" />
         </e>
       </e>
       <e p="DGM2670UnityProject.sln" t="IncludeFlat" />
