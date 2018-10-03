@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class TriggerID : MonoBehaviour
+public class MatchID : MonoBehaviour
 {
     public NameID ID;
     public UnityEvent OnMatch;
     
-    private void OnTriggerEnter(Collider obj)
+    public void Invoke (NameID id)
     {
-        if (ID == obj.GetComponent<ObjectID>().ID) //Comparing a name ID to another name ID
+        if (id == ID) //Comparing a name ID to another name ID
         {
             OnMatch.Invoke();
             print("Match");
