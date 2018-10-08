@@ -25,7 +25,7 @@ public class MovePattern : ScriptableObject
 
     protected void Move(CharacterController controller) //Uses move(controller) We're calling two move functions for different things since they never interact
     {
-        moveDirection.y -=gravity.Value * Time.deltaTime; //deltatime is a clock within unity that runs on a timeline instead of framerate
+        moveDirection.y = gravity.Value; //deltatime is a clock within unity that runs on a timeline instead of framerate
         controller.Move(moveDirection * Time.deltaTime); //run at a constant rate
     }
 
