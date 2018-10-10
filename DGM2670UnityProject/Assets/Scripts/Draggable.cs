@@ -5,25 +5,33 @@ using UnityEngine;
 public class Draggable : MonoBehaviour
 {
 
-	private Vector3 currentPosition;
+	private Vector3 offsetPosition;
 	private Vector3 newPosition;
 	private Camera cam;
+
+	public bool CanDrag;
 	
-	void Start ()
+	private void Start ()
 	{
 		cam = Camera.main;
 	}
 
-	private void OnMouseDown()
+	public IEnumerator OnMouseDown()
 	{
-		currentPosition = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);
+		offsetPosition = transform.position - cam.ScreenToWorldPoint(Input.mousePosition);
+		yield return new WaitForFixedUpdate(); //don't wanna crash Unity!
+		CanDrag = true;
+		while (CanDrag)
+		{
+			yield return new WaitForFixedUpdate();
+			newPosition = cam.ScreenToWorldPoint(Input.mousePosition) + offsetPosition;
+			transform.position = newPosition;
+		}
 	}
 
-	void OnMouseDrag()
+	private void OnMouseUP()
 	{
-		newPosition = currentPosition + cam.ScreenToWorldPoint(Input.mousePosition);
-		newPosition.z = 0;
-		transform.position = newPosition;
+		CanDrag = false;
 	}
 }
 //Script lets us drag letter around. We coded it so the center of the letter won't snap to the mouse, but we can drag
