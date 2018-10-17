@@ -9,9 +9,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 545374dfd27c0344d98e6f68734b1a4f, type: 3}
-  m_Name: AvailableLetters
+  m_Name: Objects
   m_EditorClassIdentifier: 
-  ObjectList:
-  - {fileID: 11400000, guid: cd7d88ec99da9b546a905d63d3b73148, type: 2}
-  - {fileID: 11400000, guid: 3def92e6302b5494aa519ad9c54006a4, type: 2}
-  - {fileID: 11400000, guid: 90e27181aa140c640a2e1e7e2941b45c, type: 2}
+  ObjectList: []
