@@ -10,7 +10,7 @@ public class MovePattern : ScriptableObject
     public floatData MoveX, MoveY, MoveZ; //3 at the same time! All floatdatas
     public floatData RotX, RotY, RotZ;
 
-    protected Vector3 moveDirection; //vector3 = x, y, and z (Protected so we can use it in MovePatternDual)
+    private Vector3 moveDirection; //vector3 = x, y, and z (Protected so we can use it in MovePatternDual)
     private Vector3 rotDirection;
 
     public virtual void Invoke(CharacterController controller, Transform transform) //We're gonna override it, so it's virtual
@@ -25,7 +25,7 @@ public class MovePattern : ScriptableObject
 
     protected void Move(CharacterController controller) //Uses move(controller) We're calling two move functions for different things since they never interact
     {
-        moveDirection.y = gravity.Value; //deltatime is a clock within unity that runs on a timeline instead of framerate
+        moveDirection.y -= gravity.Value; //deltatime is a clock within unity that runs on a timeline instead of framerate
         controller.Move(moveDirection * Time.deltaTime); //run at a constant rate
     }
 

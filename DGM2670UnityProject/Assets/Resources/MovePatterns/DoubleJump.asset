@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b059dbc336f5542bfdfa57479799b5, type: 3}
   m_Name: DoubleJump
   m_EditorClassIdentifier: 
-  gravity: {fileID: 11400000, guid: 78b312608f7052143914a81f5a6d2a28, type: 2}
-  MoveX: {fileID: 0}
+  gravity: {fileID: 0}
+  MoveX: {fileID: 11400000, guid: c954413a8b3537e4686d4d8f7e8329df, type: 2}
   MoveY: {fileID: 0}
   MoveZ: {fileID: 0}
   RotX: {fileID: 0}

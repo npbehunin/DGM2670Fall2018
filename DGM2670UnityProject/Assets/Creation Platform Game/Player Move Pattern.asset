@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54fb135fbfef4247a1bf46bc5288e6f, type: 3}
   m_Name: Player Move Pattern
   m_EditorClassIdentifier: 
-  gravity: {fileID: 11400000, guid: 2aaa9473e1ef1b141adc4b05c7530b18, type: 2}
-  MoveX: {fileID: 11400000, guid: 68968e1d60a146f4398c6df36e612aee, type: 2}
-  MoveY: {fileID: 11400000, guid: 82515bb53ac9f124e8fad9f178a046d6, type: 2}
-  MoveZ: {fileID: 0}
-  RotX: {fileID: 0}
-  RotY: {fileID: 0}
-  RotZ: {fileID: 0}
+  gravity: {fileID: 0}
+  MoveX: {fileID: 11400000, guid: c954413a8b3537e4686d4d8f7e8329df, type: 2}
+  MoveY: {fileID: 11400000, guid: f8f23d0f37a4a5745bea5f2908f26ff0, type: 2}
+  MoveZ: {fileID: 11400000, guid: f8f23d0f37a4a5745bea5f2908f26ff0, type: 2}
+  RotX: {fileID: 11400000, guid: f8f23d0f37a4a5745bea5f2908f26ff0, type: 2}
+  RotY: {fileID: 11400000, guid: f8f23d0f37a4a5745bea5f2908f26ff0, type: 2}
+  RotZ: {fileID: 11400000, guid: f8f23d0f37a4a5745bea5f2908f26ff0, type: 2}
