@@ -8,11 +8,19 @@
         <e p="Coloring" t="Include">
           <e p="ChangeColor.cs" t="Include" />
         </e>
+        <e p="Creation Platform Game" t="Include">
+          <e p="OnClickInstancer.cs" t="Include" />
+          <e p="TestObjectInstancer.cs" t="Include" />
+        </e>
         <e p="EventBasedBehaviours" t="Include">
           <e p="MouseDownEvent.cs" t="Include" />
         </e>
         <e p="Experimental" t="Include">
           <e p="Word.cs" t="Include" />
+        </e>
+        <e p="Instancing" t="Include">
+          <e p="InstanceAtMouse.cs" t="Include" />
+          <e p="InstanceObject.cs" t="Include" />
         </e>
         <e p="Objects" t="Include">
           <e p="ColorData.cs" t="Include" />
@@ -33,7 +41,6 @@
           <e p="ForEachLoops.cs" t="Include" />
           <e p="healthBar.cs" t="Include" />
           <e p="IfStatements.cs" t="Include" />
-          <e p="InstanceObject.cs" t="Include" />
           <e p="Letter.cs" t="Include" />
           <e p="Letters.cs" t="Include" />
           <e p="MatchID.cs" t="Include" />
