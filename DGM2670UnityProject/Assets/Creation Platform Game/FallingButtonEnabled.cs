@@ -1,18 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class FallingButtonEnabled : MonoBehaviour
 {
-	public bool StaticButton;
 	public bool FallingButton;
-	public bool BouncingButton;
+	public BouncingButtonEnabled Bounce;
+	public StaticButtonEnabled Static;
+	public DestroyEnabled Destroy;
 
-	void Update()
+	public void SetBools()
 	{
-		StaticButton = false;
+		Static.StaticButton = false;
 		FallingButton = true;
-		BouncingButton = false;
+		Bounce.BouncingButton = false;
+		Destroy.CanDestroy = false;
 	}
 }

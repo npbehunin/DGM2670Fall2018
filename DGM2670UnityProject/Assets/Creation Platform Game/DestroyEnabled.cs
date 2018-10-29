@@ -1,21 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class BouncingButtonEnabled : MonoBehaviour
+public class DestroyEnabled : MonoBehaviour
 {
-	public bool BouncingButton;
+	public bool CanDestroy;
 	public FallingButtonEnabled Fall;
 	public StaticButtonEnabled Static;
-	public DestroyEnabled Destroy;
-
+	public BouncingButtonEnabled Bounce;
+	
 	public void SetBools()
 	{
+		CanDestroy = true;
 		Static.StaticButton = false;
 		Fall.FallingButton = false;
-		BouncingButton = true;
-		Destroy.CanDestroy = false;
+		Bounce.BouncingButton = false;
 	}
 }

@@ -402,6 +402,7 @@ GameObject:
   - component: {fileID: 216423629}
   - component: {fileID: 216423628}
   - component: {fileID: 216423627}
+  - component: {fileID: 216423630}
   m_Layer: 5
   m_Name: Trash Can
   m_TagString: Untagged
@@ -456,7 +457,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 21300000, guid: 9d20f2ca145ca8e4a9372b088b9849ef,
       type: 3}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 9d20f2ca145ca8e4a9372b088b9849ef, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -467,7 +468,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 216423628}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 216423630}
+        m_MethodName: SetBools
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &216423628
@@ -503,6 +515,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 216423625}
+--- !u!114 &216423630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 216423625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c296a9a212efd4cbab18f6d923de71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanDestroy: 0
+  Fall: {fileID: 1195911887}
+  Static: {fileID: 2025840280}
+  Bounce: {fileID: 2113694289}
 --- !u!1 &222014996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,9 +2475,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0945f1620f1195f449f03aef3ccb8ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StaticButton: 0
   FallingButton: 0
-  BouncingButton: 0
+  Bounce: {fileID: 2113694289}
+  Static: {fileID: 2025840280}
+  Destroy: {fileID: 216423630}
 --- !u!1 &1419971411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2995,6 +3023,7 @@ GameObject:
   - component: {fileID: 1712728106}
   - component: {fileID: 1712728105}
   - component: {fileID: 1712728109}
+  - component: {fileID: 1712728110}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3078,7 +3107,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fall: {fileID: 1195911887}
-  prefab: {fileID: 1549477487844246, guid: d82a3ab321ba8604e80b1995ac95bd9e, type: 2}
+  Static: {fileID: 2025840280}
+  Bounce: {fileID: 2113694289}
+  Destroy: {fileID: 216423630}
+  prefab1: {fileID: 1549477487844246, guid: d82a3ab321ba8604e80b1995ac95bd9e, type: 2}
+  prefab2: {fileID: 1549477487844246, guid: e187cff164f04904a8d7676e2142888a, type: 2}
+  prefab3: {fileID: 1549477487844246, guid: d43a230d8e3320d43af68bb05ba29c34, type: 2}
+--- !u!114 &1712728110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1712728104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0552bfeed484c9b4ca42268bf302f4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1778698459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,6 +3564,7 @@ GameObject:
   - component: {fileID: 2025840279}
   - component: {fileID: 2025840278}
   - component: {fileID: 2025840277}
+  - component: {fileID: 2025840280}
   m_Layer: 5
   m_Name: Static Platform
   m_TagString: Untagged
@@ -3584,12 +3630,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: f49cab9c9658679408381a6428fb6a6f, type: 3}
-        m_MethodName: 
+      - m_Target: {fileID: 2025840280}
+        m_MethodName: SetBools
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3630,6 +3676,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025840275}
+--- !u!114 &2025840280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2025840275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f49cab9c9658679408381a6428fb6a6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StaticButton: 0
+  Fall: {fileID: 1195911887}
+  Bounce: {fileID: 2113694289}
+  Destroy: {fileID: 216423630}
 --- !u!1 &2113694284
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,6 +3702,7 @@ GameObject:
   - component: {fileID: 2113694288}
   - component: {fileID: 2113694287}
   - component: {fileID: 2113694286}
+  - component: {fileID: 2113694289}
   m_Layer: 5
   m_Name: Bounce Pad
   m_TagString: Untagged
@@ -3705,7 +3767,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2113694287}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2113694289}
+        m_MethodName: SetBools
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2113694287
@@ -3741,6 +3814,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2113694284}
+--- !u!114 &2113694289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2113694284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f456056526805842b2500e7acac6da3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BouncingButton: 0
+  Fall: {fileID: 1195911887}
+  Static: {fileID: 2025840280}
+  Destroy: {fileID: 216423630}
 --- !u!1 &2122241365
 GameObject:
   m_ObjectHideFlags: 0

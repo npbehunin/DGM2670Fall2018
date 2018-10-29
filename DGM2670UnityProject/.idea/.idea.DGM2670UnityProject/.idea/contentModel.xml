@@ -10,6 +10,8 @@
         </e>
         <e p="Creation Platform Game" t="Include">
           <e p="BouncingButtonEnabled.cs" t="Include" />
+          <e p="DestroyEnabled.cs" t="Include" />
+          <e p="DestroyOnClick.cs" t="Include" />
           <e p="FallingButtonEnabled.cs" t="Include" />
           <e p="OnClickInstancer.cs" t="Include" />
           <e p="StaticButtonEnabled.cs" t="Include" />
