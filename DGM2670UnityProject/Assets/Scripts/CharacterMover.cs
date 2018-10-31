@@ -9,6 +9,7 @@ public class CharacterMover : MonoBehaviour
 	public float Gravity;
 	public float MoveSpeed;
 	public float JumpSpeed;
+	public float BounceSpeed;
 	
 	private Vector3 position;
 	private Vector3 rotation;
@@ -16,6 +17,7 @@ public class CharacterMover : MonoBehaviour
 	void Start ()
 	{
 		Controller = GetComponent<CharacterController>();
+		Debug.Log("Started");
 	}
 	
 	void Update ()
@@ -35,5 +37,20 @@ public class CharacterMover : MonoBehaviour
 		}
 		position.y -= Gravity * Time.deltaTime;
 		Controller.Move(position * Time.deltaTime);
+	}
+	
+	void OnTriggerEnter(Collider col)
+	{
+		if (col.gameObject.name == "BouncingPlatformObject" || col.gameObject.name == "BouncingPlatformObject(Clone)")
+		{
+			Debug.Log("Detected platform!");
+			position.y = BounceSpeed;
+			//rb.AddForce(transform.up * thrust, ForceMode.Impulse);
+		}
+
+		if (col.gameObject.name == "Floor")
+		{
+			Application.LoadLevel(Application.loadedLevel);
+		}
 	}
 }

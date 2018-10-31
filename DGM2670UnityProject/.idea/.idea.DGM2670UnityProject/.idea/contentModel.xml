@@ -9,13 +9,19 @@
           <e p="ChangeColor.cs" t="Include" />
         </e>
         <e p="Creation Platform Game" t="Include">
+          <e p="BounceCollision.cs" t="Include" />
           <e p="BouncingButtonEnabled.cs" t="Include" />
+          <e p="ChangeLevel.cs" t="Include" />
           <e p="DestroyEnabled.cs" t="Include" />
           <e p="DestroyOnClick.cs" t="Include" />
+          <e p="endGame.cs" t="Include" />
           <e p="FallingButtonEnabled.cs" t="Include" />
           <e p="OnClickInstancer.cs" t="Include" />
+          <e p="OnGameStart.cs" t="Include" />
+          <e p="RestartLevel.cs" t="Include" />
           <e p="StaticButtonEnabled.cs" t="Include" />
           <e p="TestObjectInstancer.cs" t="Include" />
+          <e p="VictoryCollision.cs" t="Include" />
         </e>
         <e p="EventBasedBehaviours" t="Include">
           <e p="MouseDownEvent.cs" t="Include" />
