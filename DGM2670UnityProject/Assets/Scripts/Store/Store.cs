@@ -7,8 +7,8 @@ using UnityEngine.Events;
 public class Store : ScriptableObject
 {
 
-    public Objects Available;
-    public Objects Purchased;
+    public PurchasableObjects Available;
+    public PurchasableObjects Purchased;
     public IntData Cash;
     public int TotalValue = 3000;
 
