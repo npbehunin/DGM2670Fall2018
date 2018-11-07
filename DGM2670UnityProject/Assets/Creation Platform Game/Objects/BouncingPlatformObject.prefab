@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23032408723426188}
   - component: {fileID: 54867462667268454}
   - component: {fileID: 65691927918925304}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BouncingPlatformObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1812293799161510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -81.2, y: 4.2, z: -0.01}
+  m_LocalPosition: {x: -79.9, y: 4.2, z: -0.01}
   m_LocalScale: {x: 2.8033662, y: 0.21727943, z: 2.803366}
   m_Children: []
   m_Father: {fileID: 0}
@@ -107,8 +107,8 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1812293799161510}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0561684, y: 2.411857, z: 1.0000002}
-  m_Center: {x: -0.0050184466, y: 0.20592844, z: -0.000000085047255}
+  m_Size: {x: 1.0561684, y: 4.009261, z: 1.0000002}
+  m_Center: {x: -0.005018468, y: 1.0046306, z: -0.000000085047255}
