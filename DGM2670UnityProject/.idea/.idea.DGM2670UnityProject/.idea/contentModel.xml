@@ -61,6 +61,9 @@
           <e p="Letter.cs" t="Include" />
           <e p="Letters.cs" t="Include" />
           <e p="MatchID.cs" t="Include" />
+          <e p="Mouse" t="Include">
+            <e p="FollowMouse.cs" t="Include" />
+          </e>
           <e p="MovePattern.cs" t="Include" />
           <e p="MovePatternDual.cs" t="Include" />
           <e p="MovePatternNotGrounded.cs" t="Include" />
