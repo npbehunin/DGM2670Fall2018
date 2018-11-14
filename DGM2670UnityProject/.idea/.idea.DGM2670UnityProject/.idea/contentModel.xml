@@ -16,6 +16,7 @@
           <e p="DestroyOnClick.cs" t="Include" />
           <e p="endGame.cs" t="Include" />
           <e p="FallingButtonEnabled.cs" t="Include" />
+          <e p="ObjectLimit.cs" t="Include" />
           <e p="OnClickInstancer.cs" t="Include" />
           <e p="OnGameStart.cs" t="Include" />
           <e p="RestartLevel.cs" t="Include" />

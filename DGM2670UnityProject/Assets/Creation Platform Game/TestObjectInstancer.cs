@@ -18,6 +18,8 @@ public class TestObjectInstancer : MonoBehaviour
 	public GameObject prefab2;
 	public GameObject prefab3;
 	
+	public ObjectLimit limit;
+	
 	int layerMask = 1 << 9;
     int destroyMask = 1 << 10;
 
@@ -31,20 +33,32 @@ public class TestObjectInstancer : MonoBehaviour
 			{
 				if (Fall.FallingButton)
 				{
-					GameObject obj = Instantiate(prefab1, new Vector3(hit.point.x, hit.point.y, 0), Quaternion.identity);
-					Debug.Log("Created Falling Platform");
+					if (limit.NumFallingPlatforms > 0)
+					{
+						GameObject obj = Instantiate(prefab1, new Vector3(hit.point.x, hit.point.y, 0), Quaternion.identity);
+						Debug.Log("Created Falling Platform");
+						limit.NumFallingPlatforms -= 1;
+					}
 				}
 
 				if (Static.StaticButton)
 				{
-					GameObject obj = Instantiate(prefab2, new Vector3(hit.point.x, hit.point.y, 0), Quaternion.identity);
-					Debug.Log("Created Static Platform");
+					if (limit.NumStaticPlatforms > 0)
+					{
+						GameObject obj = Instantiate(prefab2, new Vector3(hit.point.x, hit.point.y, 0), Quaternion.identity);
+						Debug.Log("Created Static Platform");
+						limit.NumStaticPlatforms -= 1;
+					}
 				}
 				
 				if (Bounce.BouncingButton)
 				{
-					GameObject obj = Instantiate(prefab3, new Vector3(hit.point.x, hit.point.y, 0), Quaternion.identity);
-					Debug.Log("Created Bouncing Platform");
+					if (limit.NumBouncePlatforms > 0)
+					{
+						GameObject obj = Instantiate(prefab3, new Vector3(hit.point.x, hit.point.y, 0), Quaternion.identity);
+						Debug.Log("Created Bouncing Platform");
+						limit.NumBouncePlatforms -= 1;
+					}
 				}
 			}
 		}

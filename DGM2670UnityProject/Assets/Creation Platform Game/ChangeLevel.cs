@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChangeLevel : MonoBehaviour
 {
 	public int LevelNumber;
+	private OnGameStart ObjectCount;
 	
 	void Start ()
 	{
@@ -18,6 +19,7 @@ public class ChangeLevel : MonoBehaviour
 		{
 			Debug.Log("Loading Level 2");
 			SceneManager.LoadScene(Level2);
+			ObjectCount.ObjectCount();
 		}
 	}
 }
