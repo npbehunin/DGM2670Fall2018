@@ -19,6 +19,7 @@
           <e p="ObjectLimit.cs" t="Include" />
           <e p="OnClickInstancer.cs" t="Include" />
           <e p="OnGameStart.cs" t="Include" />
+          <e p="PlayAndStop.cs" t="Include" />
           <e p="RestartLevel.cs" t="Include" />
           <e p="StaticButtonEnabled.cs" t="Include" />
           <e p="TestObjectInstancer.cs" t="Include" />

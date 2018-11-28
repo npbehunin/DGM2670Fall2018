@@ -13,6 +13,8 @@ public class CharacterMover : MonoBehaviour
 	
 	private Vector3 position;
 	private Vector3 rotation;
+
+	public PlayAndStop PlayerFreeze;
 	
 	void Start ()
 	{
@@ -22,19 +24,20 @@ public class CharacterMover : MonoBehaviour
 	
 	void Update ()
 	{
-		position.Set(MoveSpeed*Input.GetAxis("Horizontal"), position.y, 0);
-		if (Controller.isGrounded)
-		{
-			position.Set(MoveSpeed*Input.GetAxis("Horizontal"), 0, 0);
-			//rotation.Set(0, Input.GetAxis("Horizontal"), 0);
-			//transform.Rotate(rotation);
-			position = transform.TransformDirection(position);
-			
-			if (Input.GetButton("Jump"))
+			position.Set(MoveSpeed * Input.GetAxis("Horizontal"), position.y, 0);
+			if (Controller.isGrounded)
 			{
-				position.y = JumpSpeed;
+				position.Set(MoveSpeed * Input.GetAxis("Horizontal"), 0, 0);
+				//rotation.Set(0, Input.GetAxis("Horizontal"), 0);
+				//transform.Rotate(rotation);
+				position = transform.TransformDirection(position);
+
+				if (Input.GetButton("Jump"))
+				{
+					position.y = JumpSpeed;
+				}
 			}
-		}
+
 		position.y -= Gravity * Time.deltaTime;
 		Controller.Move(position * Time.deltaTime);
 	}
@@ -53,4 +56,5 @@ public class CharacterMover : MonoBehaviour
 			Application.LoadLevel(Application.loadedLevel);
 		}
 	}
+
 }
