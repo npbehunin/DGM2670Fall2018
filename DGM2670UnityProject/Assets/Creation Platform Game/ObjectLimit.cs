@@ -14,11 +14,21 @@ public class ObjectLimit : MonoBehaviour
 	public Text staticlabel;
 	public Text bouncinglabel;
 
+	public int FallingTotal;
+	public int StaticTotal;
+	public int BounceTotal;
+
+	public CreationGameStore StoreAdd;
+
 	void Update()
 	{
-		fallinglabel.text = "x" + NumFallingPlatforms.ToString();
-		staticlabel.text = "x" + NumStaticPlatforms.ToString();
-		bouncinglabel.text = "x" + NumBouncePlatforms.ToString();
+		fallinglabel.text = "x" + FallingTotal.ToString();
+		staticlabel.text = "x" + StaticTotal.ToString();
+		bouncinglabel.text = "x" + BounceTotal.ToString();
+		
+		FallingTotal = NumFallingPlatforms + StoreAdd.FallingAdd; //Total value equal to beginning level number + store number
+		StaticTotal = NumStaticPlatforms + StoreAdd.StaticAdd;
+		BounceTotal = NumBouncePlatforms + StoreAdd.BounceAdd;
 	}
 
 	

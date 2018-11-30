@@ -13,21 +13,23 @@ public class PlayAndStop : MonoBehaviour
 	public Button StopButton;
 
 	public bool PlayerMovementEnabled;
+	public bool CanBuild;
 
 	void Start()
 		{
-			//PlayButton.onClick.AddListener(PlayButtonTask);
-			//StopButton.onClick.AddListener(StopButtonTask);
+			PlayButton.onClick.AddListener(PlayButtonTask);
+			StopButton.onClick.AddListener(StopButtonTask);
 		}
 	
 	void PlayButtonTask()
 	{
-		//PlayerMovementEnabled = true;
+		PlayerMovementEnabled = true;
+		CanBuild = false;
 	}
 
 	void StopButtonTask()
 	{
-		//Scene scene = SceneManager.GetActiveScene(); 
-		//SceneManager.LoadScene(scene.name);
+		Scene scene = SceneManager.GetActiveScene(); 
+		SceneManager.LoadScene(scene.name);
 	}
 }

@@ -13,11 +13,12 @@ public class OnGameStart : MonoBehaviour
 	public Text levelComplete;
 
 	public ObjectLimit limit;
-	//public PlayAndStop PlayerMovement;
+	public PlayAndStop PlayerMovement;
 	
 	void Start()
 	{
-		//PlayerMovement.PlayerMovementEnabled = true;
+		PlayerMovement.PlayerMovementEnabled = false;
+		PlayerMovement.CanBuild = true;
 		
 		nextLevelButton.gameObject.SetActive(false);
 		restartButton.gameObject.SetActive(false);

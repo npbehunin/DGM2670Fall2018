@@ -14,7 +14,7 @@ public class CharacterMover : MonoBehaviour
 	private Vector3 position;
 	private Vector3 rotation;
 
-	public PlayAndStop PlayerFreeze;
+	public PlayAndStop PlayStop;
 	
 	void Start ()
 	{
@@ -24,6 +24,13 @@ public class CharacterMover : MonoBehaviour
 	
 	void Update ()
 	{
+		if (PlayStop.PlayerMovementEnabled == true)
+		{
+			Gravity = 30;
+			MoveSpeed = 9;
+			JumpSpeed = 16;
+			BounceSpeed = 25;
+			
 			position.Set(MoveSpeed * Input.GetAxis("Horizontal"), position.y, 0);
 			if (Controller.isGrounded)
 			{
@@ -37,6 +44,11 @@ public class CharacterMover : MonoBehaviour
 					position.y = JumpSpeed;
 				}
 			}
+		}
+		else if (PlayStop.PlayerMovementEnabled == false)
+		{
+			FreezePlayer();
+		}
 
 		position.y -= Gravity * Time.deltaTime;
 		Controller.Move(position * Time.deltaTime);
@@ -55,6 +67,14 @@ public class CharacterMover : MonoBehaviour
 		{
 			Application.LoadLevel(Application.loadedLevel);
 		}
+	}
+
+	void FreezePlayer()
+	{
+		Gravity = 0;
+		MoveSpeed = 0;
+		JumpSpeed = 0;
+		BounceSpeed = 0;
 	}
 
 }

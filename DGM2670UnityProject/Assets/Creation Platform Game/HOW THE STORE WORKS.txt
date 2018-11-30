@@ -1,0 +1,29 @@
+TO DO LIST:
+1. DONE
+2. Make spinning coins!
+3. Collecting coins adds +10.
+4. Subtract coin value when player buys something.
+5. Store the coin value at the end of each level so it can carry on into the next scene.
+6. Store the ObjectAdd values so they can remain in the scene when the player presses stop. (And reset it for the next scene)
+
+
+
+HOW THE STORE WILL WORK TO BUY OBJECTS
+
+1. Make a new variable that will store a number based on how many objects the player bought. (Ex. If the player purchased 2 static platforms in the level, "NewVar" will be = 2.
+
+2. Our new var is added to the level's remaining object count. (Ex. If the current number of static platforms is 3, it will add "NewVar" and make it 5.
+
+THIS WAY, EVEN IF THE PLAYER HITS STOP, THE NEWVAR WILL STILL BE STORED AND ADDED SEPERATELY.
+
+(Note! Make sure to never tell the current level's number of objects to be equal to itself plus NewVar. (CurrentObjCount = CurrentObjCount + NewVar) THAT'S BAD)
+
+3. Each coin the player collects will be equal to +10. A falling platform will cost 10, static is 20, and bounce is 30.
+
+4. The player can purchase as many as he wants.
+
+5. Disable the buttons if the player CAN'T afford it.
+
+6. IMPORTANT, get the coin value at the beginning of each level. If the player hits "stop" after collecting coins, the coin value needs to reset to what it was at the beginning
+
+
