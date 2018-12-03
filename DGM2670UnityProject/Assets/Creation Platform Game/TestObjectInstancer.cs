@@ -90,19 +90,19 @@ public class TestObjectInstancer : MonoBehaviour
 					if (Destroy.CanDestroy)
 					{
 						Destroy(hit.collider.gameObject);
-						if (hit.transform.name == "FallingPlatformObj(Clone)")
+						//if (hit.transform.name == "FallingPlatformObj(Clone)")
 						{
-							limit.NumFallingPlatforms += 1;
+							//limit.NumFallingPlatforms += 1;
 						}
 
-						if (hit.transform.name == "StaticPlatformObject(Clone)")
+						//if (hit.transform.name == "StaticPlatformObject(Clone)")
 						{
-							limit.NumStaticPlatforms += 1;
+							//limit.NumStaticPlatforms += 1;
 						}
 
-						if (hit.transform.name == "BouncingPlatformObject(Clone)")
+						//if (hit.transform.name == "BouncingPlatformObject(Clone)")
 						{
-							limit.NumBouncePlatforms += 1;
+							//limit.NumBouncePlatforms += 1;
 						}
 					}
 				}

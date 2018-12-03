@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\npbeh\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_DGM2670UnityProject.-822626513.00" t="ExcludeRecursive" />
-    <e p="C:\Users\npbeh\Documents\UVU\Fall 2018\DGM2670Fall2018\DGM2670UnityProject" t="IncludeRecursive">
+    <e p="C:\Users\10672633\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_DGM2670UnityProject.-2035875413.00" t="ExcludeRecursive" />
+    <e p="C:\Users\10672633\Documents\Gitkraken\npbehunin\DGM2670Fall2018\DGM2670UnityProject" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Coloring" t="Include">
@@ -11,10 +11,14 @@
         <e p="Creation Platform Game" t="Include">
           <e p="BounceCollision.cs" t="Include" />
           <e p="BouncingButtonEnabled.cs" t="Include" />
+          <e p="CameraFollowPlayer.cs" t="Include" />
+          <e p="Cash.cs" t="Include" />
           <e p="ChangeLevel.cs" t="Include" />
+          <e p="CoinCollision.cs" t="Include" />
           <e p="CreationGameStore.cs" t="Include" />
           <e p="DestroyEnabled.cs" t="Include" />
           <e p="DestroyOnClick.cs" t="Include" />
+          <e p="DontDestroyOnLoad.cs" t="Include" />
           <e p="endGame.cs" t="Include" />
           <e p="FallingButtonEnabled.cs" t="Include" />
           <e p="HOW THE STORE WORKS.txt" t="Include" />

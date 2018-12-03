@@ -6,6 +6,7 @@ TagManager:
   tags:
   - A
   - InstantiatedObject
+  - Coin
   layers:
   - Default
   - TransparentFX

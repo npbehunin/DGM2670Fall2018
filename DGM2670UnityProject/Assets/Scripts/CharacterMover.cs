@@ -14,7 +14,7 @@ public class CharacterMover : MonoBehaviour
 	private Vector3 position;
 	private Vector3 rotation;
 
-	public PlayAndStop PlayStop;
+	//public PlayAndStop PlayStop;
 	
 	void Start ()
 	{
@@ -24,7 +24,7 @@ public class CharacterMover : MonoBehaviour
 	
 	void Update ()
 	{
-		if (PlayStop.PlayerMovementEnabled == true)
+		//if (PlayStop.PlayerMovementEnabled == true)
 		{
 			Gravity = 30;
 			MoveSpeed = 9;
@@ -45,9 +45,9 @@ public class CharacterMover : MonoBehaviour
 				}
 			}
 		}
-		else if (PlayStop.PlayerMovementEnabled == false)
+		//else if (PlayStop.PlayerMovementEnabled == false)
 		{
-			FreezePlayer();
+			//FreezePlayer();
 		}
 
 		position.y -= Gravity * Time.deltaTime;

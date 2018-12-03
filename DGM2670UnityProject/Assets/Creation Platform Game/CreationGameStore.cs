@@ -21,7 +21,7 @@ public class CreationGameStore : MonoBehaviour
 	
 	void Start ()
 	{
-		Cash = 30;
+		Cash = 0;
 		FallingAdd = 0;
 		StaticAdd = 0;
 		BounceAdd = 0;
