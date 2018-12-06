@@ -93,6 +93,9 @@
             <e p="PurchasableObjects.cs" t="Include" />
             <e p="Store.cs" t="Include" />
           </e>
+          <e p="Storev2" t="Include">
+            <e p="Storev2.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="DGM2670UnityProject.sln" t="IncludeFlat" />
