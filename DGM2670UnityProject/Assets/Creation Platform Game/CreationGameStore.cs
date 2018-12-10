@@ -12,7 +12,8 @@ public class CreationGameStore : MonoBehaviour
 
 	public Text CashAmount;
 
-	public int Cash;
+	public floatData OurMoney;
+	
 	public int FallingAdd;
 	public int StaticAdd;
 	public int BounceAdd;
@@ -21,11 +22,6 @@ public class CreationGameStore : MonoBehaviour
 	
 	void Start ()
 	{
-		Cash = 0;
-		FallingAdd = 0;
-		StaticAdd = 0;
-		BounceAdd = 0;
-
 		PurchaseFalling.onClick.AddListener(OnFallingClick);
 		PurchaseStatic.onClick.AddListener(OnStaticClick);
 		PurchaseBounce.onClick.AddListener(OnBounceClick);
@@ -37,45 +33,45 @@ public class CreationGameStore : MonoBehaviour
 
 	void Update()
 	{
-		CashAmount.text = "Cash: $" + Cash.ToString();
+		CashAmount.text = "Cash: $" + OurMoney.value.ToString();
 
-		if (Cash >= 10)
+		if (OurMoney.value >= 10)
 		{
 			PurchaseFalling.interactable = true;
 		}
 		else PurchaseFalling.interactable = false;
 		
-		if (Cash >= 20)
+		if (OurMoney.value >= 20)
 		{
 			PurchaseStatic.interactable = true;
 		}
 		else PurchaseStatic.interactable = false;
 		
-		if (Cash >= 30)
+		if (OurMoney.value >= 30)
 		{
 			PurchaseBounce.interactable = true;
 		}
 		else PurchaseBounce.interactable = false;
 	}
-
+	
 	void OnFallingClick()
 	{
 		FallingAdd += 1;
 		Debug.Log("Purchased one Falling Platform");
-		Cash -= 10;
+		OurMoney.value -= 10;
 	}
 
 	void OnStaticClick()
 	{
 		StaticAdd += 1;
 		Debug.Log("Purchased one Static Platform");
-		Cash -= 20;
+		OurMoney.value -= 20;
 	}
 
 	void OnBounceClick()
 	{
 		BounceAdd += 1;
 		Debug.Log("Purchased one Bouncing Platform");
-		Cash -= 30;
+		OurMoney.value -= 30;
 	}
 }

@@ -1377,6 +1377,12 @@ MonoBehaviour:
   offset: {x: 0, y: 5, z: -5}
   actualPosition: {x: 0, y: 0, z: 0}
   yPosition: 0
+--- !u!114 &431639790 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114696320845130246, guid: 58358e9bc91dc4843b0f6cf1b3ab2aa7,
+    type: 2}
+  m_PrefabInternal: {fileID: 431639787}
+  m_Script: {fileID: 11500000, guid: e327f92dc18cfa84fb6cafce3460e674, type: 3}
 --- !u!1 &453256742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1812293799161510, guid: 998616b64b5ffd546ba0f258213f28b8,
@@ -1873,6 +1879,7 @@ GameObject:
   - component: {fileID: 1022905983}
   - component: {fileID: 1022905982}
   - component: {fileID: 1022905981}
+  - component: {fileID: 1022905984}
   m_Layer: 5
   m_Name: PurchaseStatic
   m_TagString: Untagged
@@ -1974,6 +1981,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1022905979}
   m_CullTransparentMesh: 0
+--- !u!114 &1022905984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022905979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f54fb93bd670c24b85cc4fa88c62eed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInstancer: {fileID: 431639790}
 --- !u!1 &1133968274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2537,7 +2556,7 @@ MonoBehaviour:
   PurchaseStatic: {fileID: 1022905981}
   PurchaseBounce: {fileID: 2087586744}
   CashAmount: {fileID: 1679498248}
-  Cash: 0
+  OurMoney: {fileID: 11400000, guid: 843a0c732570b9744aeb1d6ed6c29db4, type: 2}
   FallingAdd: 0
   StaticAdd: 0
   BounceAdd: 0
@@ -4149,7 +4168,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1996674527}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -4203,7 +4222,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1996674527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.2, y: -9.6, z: -5.9}
+  m_LocalPosition: {x: -21.2, y: -9.6, z: 8.2}
   m_LocalScale: {x: 111.811676, y: 16.001642, z: 18.859863}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4381,6 +4400,7 @@ GameObject:
   - component: {fileID: 2087586746}
   - component: {fileID: 2087586745}
   - component: {fileID: 2087586744}
+  - component: {fileID: 2087586747}
   m_Layer: 5
   m_Name: PurchaseBounce
   m_TagString: Untagged
@@ -4482,6 +4502,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2087586742}
   m_CullTransparentMesh: 0
+--- !u!114 &2087586747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2087586742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f54fb93bd670c24b85cc4fa88c62eed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInstancer: {fileID: 431639790}
 --- !u!1 &2106148345
 GameObject:
   m_ObjectHideFlags: 0
@@ -4679,6 +4711,7 @@ GameObject:
   - component: {fileID: 2146802670}
   - component: {fileID: 2146802669}
   - component: {fileID: 2146802668}
+  - component: {fileID: 2146802671}
   m_Layer: 5
   m_Name: PurchaseFalling
   m_TagString: Untagged
@@ -4780,3 +4813,15 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2146802666}
   m_CullTransparentMesh: 0
+--- !u!114 &2146802671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2146802666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f54fb93bd670c24b85cc4fa88c62eed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInstancer: {fileID: 431639790}

@@ -21,10 +21,17 @@ public class TestObjectInstancer : MonoBehaviour
 	public ObjectLimit limit;
 	public PlayAndStop PlayButton;
 
+	public bool NotOverButton;
+
 	public CreationGameStore store;
 	
 	int layerMask = 1 << 9;
     int destroyMask = 1 << 10;
+
+	void Start()
+	{
+		NotOverButton = true;
+	}
 
 	void Update()
 	{
@@ -36,48 +43,51 @@ public class TestObjectInstancer : MonoBehaviour
 			{
 				if (Input.GetMouseButtonDown(0))
 				{
-					if (Fall.FallingButton)
+					if (NotOverButton)
 					{
-						if (limit.FallingTotal > 0)
+						if (Fall.FallingButton)
 						{
-							GameObject obj = Instantiate(prefab1, new Vector3(hit.point.x, hit.point.y, 0),
-								Quaternion.identity);
-							Debug.Log("Created Falling Platform");
-							if (store.FallingAdd > 0)
+							if (limit.FallingTotal > 0)
 							{
-								store.FallingAdd -= 1;
+								GameObject obj = Instantiate(prefab1, new Vector3(hit.point.x, hit.point.y, 0),
+									Quaternion.identity);
+								Debug.Log("Created Falling Platform");
+								if (store.FallingAdd > 0)
+								{
+									store.FallingAdd -= 1;
+								}
+								else limit.NumFallingPlatforms -= 1;
 							}
-							else limit.NumFallingPlatforms -= 1;
 						}
-					}
 
-					if (Static.StaticButton)
-					{
-						if (limit.StaticTotal > 0)
+						if (Static.StaticButton)
 						{
-							GameObject obj = Instantiate(prefab2, new Vector3(hit.point.x, hit.point.y, 0),
-								Quaternion.identity);
-							Debug.Log("Created Static Platform");
-							if (store.StaticAdd > 0)
+							if (limit.StaticTotal > 0)
 							{
-								store.StaticAdd -= 1;
+								GameObject obj = Instantiate(prefab2, new Vector3(hit.point.x, hit.point.y, 0),
+									Quaternion.identity);
+								Debug.Log("Created Static Platform");
+								if (store.StaticAdd > 0)
+								{
+									store.StaticAdd -= 1;
+								}
+								else limit.NumStaticPlatforms -= 1;
 							}
-							else limit.NumStaticPlatforms -= 1;
 						}
-					}
 
-					if (Bounce.BouncingButton)
-					{
-						if (limit.BounceTotal > 0)
+						if (Bounce.BouncingButton)
 						{
-							GameObject obj = Instantiate(prefab3, new Vector3(hit.point.x, hit.point.y, 0),
-								Quaternion.identity);
-							Debug.Log("Created Bouncing Platform");
-							if (store.BounceAdd > 0)
+							if (limit.BounceTotal > 0)
 							{
-								store.BounceAdd -= 1;
+								GameObject obj = Instantiate(prefab3, new Vector3(hit.point.x, hit.point.y, 0),
+									Quaternion.identity);
+								Debug.Log("Created Bouncing Platform");
+								if (store.BounceAdd > 0)
+								{
+									store.BounceAdd -= 1;
+								}
+								else limit.NumBouncePlatforms -= 1;
 							}
-							else limit.NumBouncePlatforms -= 1;
 						}
 					}
 				}

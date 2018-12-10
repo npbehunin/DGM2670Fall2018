@@ -12,7 +12,7 @@ public class CoinCollision : MonoBehaviour
 		if (col.gameObject.CompareTag("Coin"))
 		{
 			Destroy(col.gameObject);
-			Store.Cash += 10;
+			Store.OurMoney.value += 10;
 		}
 	}
 }
