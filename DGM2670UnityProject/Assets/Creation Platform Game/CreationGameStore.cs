@@ -29,6 +29,8 @@ public class CreationGameStore : MonoBehaviour
 		PurchaseFalling.interactable = false;
 		PurchaseStatic.interactable = false;
 		PurchaseBounce.interactable = false;
+
+		OurMoney.value = 0;
 	}
 
 	void Update()
