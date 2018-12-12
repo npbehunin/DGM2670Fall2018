@@ -20,6 +20,7 @@
           <e p="DestroyOnClick.cs" t="Include" />
           <e p="DontDestroyOnLoad.cs" t="Include" />
           <e p="endGame.cs" t="Include" />
+          <e p="EndGameEvent.cs" t="Include" />
           <e p="FallingButtonEnabled.cs" t="Include" />
           <e p="HOW THE STORE WORKS.txt" t="Include" />
           <e p="ObjectLimit.cs" t="Include" />

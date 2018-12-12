@@ -2143,6 +2143,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df8d325049111f34e989798c22210316, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &691772361 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114594832872883816, guid: df8d325049111f34e989798c22210316,
+    type: 2}
+  m_PrefabInternal: {fileID: 691772360}
+  m_Script: {fileID: 11500000, guid: 79f390fb8609e0545a9542ca2bd24885, type: 3}
 --- !u!1 &695633181
 GameObject:
   m_ObjectHideFlags: 0
@@ -5374,6 +5380,33 @@ MonoBehaviour:
   StaticTotal: 0
   BounceTotal: 0
   StoreAdd: {fileID: 1794304733}
+--- !u!114 &1794304731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1794304729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe306c972722317449abfbff8878c1e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuitGame:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 691772361}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1794304733
 MonoBehaviour:
   m_ObjectHideFlags: 0
